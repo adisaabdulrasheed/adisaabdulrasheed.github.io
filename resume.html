@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CV of Adisa Abdulrasheed Babatunde, entry-level web developer.">
+    <meta name="theme-color" content="#0b1120">
+    <title>CV | Adisa Abdulrasheed Babatunde</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --background: #0b1120;
+        --surface: #101a2d;
+        --text: #eef3fb;
+        --muted: #9aa8be;
+        --accent: #6ea8fe;
+        --line: rgba(165, 188, 224, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+        background: var(--background);
+        color: var(--text);
+        font-family: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
+        font-size: 15px;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+      }
+
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      .toolbar a,
+      .toolbar button {
+        padding: 9px 14px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        color: var(--text);
+        font: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .resume {
+        padding: clamp(24px, 6vw, 56px);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 4px;
+        font-size: clamp(2rem, 6vw, 3rem);
+        letter-spacing: -0.05em;
+        line-height: 1.15;
+      }
+
+      h2 {
+        margin: 30px 0 12px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--line);
+        color: var(--accent);
+        font-size: 1.05rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin-bottom: 2px;
+        font-size: 1rem;
+      }
+
+      .headline,
+      .meta,
+      .date {
+        color: var(--muted);
+      }
+
+      .headline {
+        margin-bottom: 14px;
+        font-size: 1.1rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 18px;
+        margin: 0;
+      }
+
+      .entry + .entry {
+        margin-top: 20px;
+      }
+
+      .entry p {
+        margin: 7px 0;
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 4px;
+      }
+
+      .skills {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 520px) {
+        body {
+          padding: 18px 12px 32px;
+        }
+
+        .toolbar {
+          align-items: flex-start;
+        }
+      }
+
+      @media print {
+        :root {
+          color-scheme: light;
+          --background: #fff;
+          --surface: #fff;
+          --text: #172033;
+          --muted: #445168;
+          --accent: #245ba8;
+          --line: #cbd3df;
+        }
+
+        @page {
+          margin: 16mm;
+        }
+
+        body {
+          max-width: none;
+          padding: 0;
+          background: #fff;
+          font-size: 10pt;
+          line-height: 1.45;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .toolbar {
+          display: none;
+        }
+
+        .resume {
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          background: #fff;
+        }
+
+        h1 {
+          font-size: 25pt;
+        }
+
+        h2 {
+          margin-top: 18px;
+          font-size: 10pt;
+          break-after: avoid;
+        }
+
+        h3 {
+          break-after: avoid;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .entry,
+        li {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="toolbar" aria-label="CV actions">
+      <a href="index.html">← Portfolio</a>
+      <button id="print-cv" type="button">Print / Save as PDF</button>
+    </nav>
+
+    <main class="resume">
+      <header>
+        <h1>Adisa Abdulrasheed Babatunde</h1>
+        <p class="headline">Entry-level Web Developer</p>
+        <p class="meta">
+          <span>Nigeria</span>
+          <a href="mailto:abdulrasheedadisa01@gmail.com">abdulrasheedadisa01@gmail.com</a>
+          <a href="https://github.com/adisaabdulrasheed" target="_blank" rel="noopener noreferrer">github.com/adisaabdulrasheed</a>
+          <a href="https://www.linkedin.com/in/abdulrasheed-adisa-053257449" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+        </p>
+      </header>
+
+      <section aria-labelledby="summary-title">
+        <h2 id="summary-title">Professional Summary</h2>
+        <p>
+          Entry-level web developer with project experience using HTML, CSS,
+          JavaScript, PHP, and MySQL, alongside AI-assisted development. Mechatronics
+          Engineering diploma graduate with distinction and NYSC experience in the
+          Meter Installation Department at Yola Electricity Distribution Company.
+        </p>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical Skills</h2>
+        <p class="skills">
+          HTML5, CSS3, JavaScript, PHP, MySQL / MySQLi, responsive web design,
+          Git &amp; GitHub, basic Python automation, AI-assisted development.
+        </p>
+      </section>
+
+      <section aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <article class="entry">
+          <h3>NYSC Corps Member · Meter Installation Department</h3>
+          <p class="date">Yola Electricity Distribution Company (YEDC) · Dec 2025 – Oct 2026</p>
+          <ul>
+            <li>Worked on meter coupling and meter installation.</li>
+            <li>Used KoboCollect for customer KYC data collection.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <article class="entry">
+          <h3>TAMIR Hotels · Hotel Booking &amp; Reception Management System</h3>
+          <p>
+            Contributed using AI-assisted development across HTML, CSS, JavaScript,
+            PHP, and MySQL to an application covering online booking and reception
+            activity.
+          </p>
+          <ul>
+            <li>Worked on associating staff actions in the application with the staff member responsible.</li>
+            <li>Worked on recording customer payments received later against the customer’s check-in date.</li>
+          </ul>
+          <p><a href="https://tamirhotels.com.ng/" target="_blank" rel="noopener noreferrer">tamirhotels.com.ng</a></p>
+        </article>
+        <article class="entry">
+          <h3>Python Automation Practice</h3>
+          <p>Basic automation work involving computer files, a to-do list, and Gmail messages.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <article class="entry">
+          <h3>Diploma in Mechatronics Engineering · Distinction</h3>
+          <p class="date">The Polytechnic, Ibadan · 2024</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      document.querySelector("#print-cv").addEventListener("click", () => window.print());
+    </script>
+  </body>
+</html>
